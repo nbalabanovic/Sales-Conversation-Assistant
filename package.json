@@ -1,0 +1,9 @@
+{
+  "name": "sales-conversation-assistant",
+  "version": "1.0.0",
+  "description": "BT Local Business cold call assistant. Stepwise decision tree for discovery calls.",
+  "private": true,
+  "scripts": {
+    "start": "node server.js"
+  }
+}
