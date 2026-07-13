@@ -205,7 +205,7 @@
     overlay.hidden = true;
   }
 
-  document.querySelectorAll(".jump-btn").forEach((btn) => {
+  document.querySelectorAll("[data-panel]").forEach((btn) => {
     btn.addEventListener("click", () => openPanel(btn.dataset.panel));
   });
 
