@@ -2,13 +2,19 @@
 
 An internal cold call assistant for BT Local Business. A stepwise decision tree that guides you through discovery calls, from the opening line to booking the specialist meeting.
 
-## Run it
+## Run it locally
 
 ```
 npm start
 ```
 
 Then open http://localhost:3000. No dependencies to install, it only needs Node.
+
+## Hosted version
+
+The app is static and also served by GitHub Pages from the `docs/` folder on `main`.
+Once Pages is enabled (Settings, then Pages, then Deploy from a branch, `main` / `docs`),
+it is available at https://nbalabanovic.github.io/Sales-Conversation-Assistant/.
 
 ## How it works
 
