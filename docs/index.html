@@ -9,25 +9,27 @@
 </head>
 <body>
 
-  <header class="topbar">
-    <div class="topbar-inner">
-      <nav class="jump" aria-label="Quick access">
-        <button class="jump-btn" data-panel="valueprops">Value Props</button>
-        <button class="jump-btn" data-panel="discovery">Questions</button>
-        <button class="jump-btn" data-panel="products">Products</button>
-        <button class="jump-btn" data-panel="close">Close</button>
-      </nav>
-      <div class="nav-actions">
-        <button class="ghost-btn" id="backBtn" title="Back one step">Back</button>
-        <button class="ghost-btn" id="restartBtn" title="Restart the call">Restart</button>
-      </div>
-    </div>
-  </header>
+  <div class="app">
+    <aside class="sidebar sidebar-left" aria-label="Quick access">
+      <div class="brand">Call Assistant</div>
+      <div class="sidebar-label">Jump to</div>
+      <button class="side-btn" data-panel="valueprops">Value Props</button>
+      <button class="side-btn" data-panel="discovery">Questions</button>
+      <button class="side-btn" data-panel="products">Products</button>
+      <button class="side-btn" data-panel="close">Close</button>
+    </aside>
 
-  <main class="stage">
-    <div class="rail" id="stageRail" aria-label="Call stage"></div>
-    <div id="view"></div>
-  </main>
+    <main class="stage">
+      <div class="rail" id="stageRail" aria-label="Call stage"></div>
+      <div id="view"></div>
+    </main>
+
+    <aside class="sidebar sidebar-right" aria-label="Call controls">
+      <div class="sidebar-label">Controls</div>
+      <button class="side-btn ctrl" id="backBtn" title="Back one step">Back</button>
+      <button class="side-btn ctrl" id="restartBtn" title="Restart the call">Restart</button>
+    </aside>
+  </div>
 
   <div class="overlay" id="overlay" hidden>
     <div class="overlay-panel" role="dialog" aria-modal="true">
