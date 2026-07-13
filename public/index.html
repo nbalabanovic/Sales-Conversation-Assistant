@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Call Assistant</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📞</text></svg>">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">Call Assistant</div>
+      <nav class="jump" aria-label="Quick access">
+        <button class="jump-btn" data-panel="valueprops">Value Props</button>
+        <button class="jump-btn" data-panel="discovery">Questions</button>
+        <button class="jump-btn" data-panel="products">Products</button>
+        <button class="jump-btn" data-panel="close">Close</button>
+      </nav>
+      <div class="nav-actions">
+        <button class="ghost-btn" id="backBtn" title="Back one step">Back</button>
+        <button class="ghost-btn" id="restartBtn" title="Restart the call">Restart</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="stage">
+    <div class="rail" id="stageRail" aria-label="Call stage"></div>
+    <div id="view"></div>
+  </main>
+
+  <div class="overlay" id="overlay" hidden>
+    <div class="overlay-panel" role="dialog" aria-modal="true">
+      <div class="overlay-head">
+        <h2 id="overlayTitle"></h2>
+        <button class="ghost-btn" id="overlayClose" aria-label="Close panel">Close</button>
+      </div>
+      <div class="overlay-body" id="overlayBody"></div>
+    </div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
