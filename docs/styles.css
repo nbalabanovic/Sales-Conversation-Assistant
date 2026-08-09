@@ -72,6 +72,17 @@ button:focus-visible,
   margin-bottom: 14px;
 }
 
+.switcher {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--accent-deep);
+  text-decoration: none;
+  padding: 0 4px;
+  margin-bottom: 8px;
+}
+
+.switcher:hover { text-decoration: underline; }
+
 .sidebar-label {
   font-size: 12px;
   font-weight: 700;

@@ -1,6 +1,13 @@
 # Sales Conversation Assistant
 
-An internal cold call assistant for BT Local Business. A stepwise decision tree that guides you through discovery calls, from the opening line to booking the specialist meeting.
+Internal cold call assistants for BT Local Business. Stepwise decision trees that guide you through a call, from the opening line to booking the meeting.
+
+Two flows, each self-contained, with a switcher link in the top of the left rail:
+
+| Flow | Path | What it covers |
+| --- | --- | --- |
+| **BT connectivity** | `/` | Broadband, Mobile, Security, VoIP and Digital Voice, AI Assistants, Acquisition |
+| **EE mobile** | `/ee/` | Competitor battle cards: Core Four questions, pain to PIC, Vodafone / O2 / Three / MVNO |
 
 ## Run it locally
 
@@ -16,7 +23,20 @@ The app is static and also served by GitHub Pages from the `docs/` folder on `ma
 Once Pages is enabled (Settings, then Pages, then Deploy from a branch, `main` / `docs`),
 it is available at https://nbalabanovic.github.io/Sales-Conversation-Assistant/.
 
-## How it works
+## The EE mobile flow
+
+Built from the EE Business Competitor Battle Cards (BT Local Business London West, FY26/27).
+
+The funnel is Core Four, The Pain, Battle Card, Close.
+
+- **Core Four**, asked in order on every call: the network, the estate, the contract, the pain. The network answer picks the battle card and the estate answer sets corporate or SME, both shown as chips at the top of every later step.
+- **Pain branches** into the matching PIC (Problem, Root Cause, Business Impact) with the attack line and a word-for-word response.
+- **Battle card** renders for whichever provider was named, with the red "don't discuss" side (plus pivot lines), the green "do discuss" side, and three killer questions.
+- **The alignment question** adapts to segment: co-terminus for corporate, Anytime Upgrades for SME, since co-terminus must never be promised to an SME.
+
+Panels: Battle Cards, Objections, Fact-Find, PIC Library, Why EE, ESN Proof, Do / Don't.
+
+## The BT connectivity flow
 
 The standard funnel is Intro, Discovery, Qualify, Close. Pick a pathway (Broadband, Mobile, Security, VoIP and Digital Voice, AI Assistants, or Acquisition), then click through the call as it unfolds. Each step shows what to say, and the buttons match how the prospect responds.
 
