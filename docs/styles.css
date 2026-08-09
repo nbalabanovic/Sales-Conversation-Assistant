@@ -1,22 +1,22 @@
 /* Broadband call assistant — console styling.
-   Cool neutrals, squared geometry, monospace for labels and data,
+   Warm off-white ground, squared geometry, monospace for labels and data,
    a signal-strength meter for call stage. Light and dark both designed. */
 
 :root {
-  --bg: #eceff3;
+  --bg: #faf9f4;
   --panel: #ffffff;
-  --panel-2: #e2e7ed;
-  --line: #ccd5de;
-  --line-strong: #a7b4c1;
-  --ink: #0a1017;
-  --muted: #4f5c69;
-  --accent: #0b46c8;
+  --panel-2: #f2f0e8;
+  --line: #e7e3d8;
+  --line-strong: #d8d2c2;
+  --ink: #23211c;
+  --muted: #6f6a5e;
+  --accent: #a84e2e;
   --accent-ink: #ffffff;
-  --accent-soft: #dde6ff;
-  --good: #0d6b45;
-  --good-soft: #dcefe5;
-  --good-line: #a9d3bf;
-  --shadow: 0 12px 32px rgba(10, 16, 23, 0.16);
+  --accent-soft: #f8ece5;
+  --good: #4e7a56;
+  --good-soft: #eaf1e9;
+  --good-line: #c4d6c3;
+  --shadow: 0 12px 32px rgba(35, 33, 28, 0.16);
 
   --sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   --mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
@@ -24,37 +24,37 @@
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg: #090d12;
-    --panel: #111822;
-    --panel-2: #1a2330;
-    --line: #24303e;
-    --line-strong: #3a4959;
-    --ink: #e6ecf3;
-    --muted: #8b9aab;
-    --accent: #5a92ff;
-    --accent-ink: #05101f;
-    --accent-soft: #14243d;
-    --good: #3ecb90;
-    --good-soft: #0f2620;
-    --good-line: #1f4a3a;
+    --bg: #14120f;
+    --panel: #1c1a16;
+    --panel-2: #26231d;
+    --line: #322e26;
+    --line-strong: #4a453a;
+    --ink: #efece4;
+    --muted: #a49c8c;
+    --accent: #e0805a;
+    --accent-ink: #1a0f08;
+    --accent-soft: #2a1a12;
+    --good: #74b583;
+    --good-soft: #17241a;
+    --good-line: #2e4834;
     --shadow: 0 12px 40px rgba(0, 0, 0, 0.55);
   }
 }
 
 :root[data-theme="dark"] {
-  --bg: #090d12;
-  --panel: #111822;
-  --panel-2: #1a2330;
-  --line: #24303e;
-  --line-strong: #3a4959;
-  --ink: #e6ecf3;
-  --muted: #8b9aab;
-  --accent: #5a92ff;
-  --accent-ink: #05101f;
-  --accent-soft: #14243d;
-  --good: #3ecb90;
-  --good-soft: #0f2620;
-  --good-line: #1f4a3a;
+  --bg: #14120f;
+  --panel: #1c1a16;
+  --panel-2: #26231d;
+  --line: #322e26;
+  --line-strong: #4a453a;
+  --ink: #efece4;
+  --muted: #a49c8c;
+  --accent: #e0805a;
+  --accent-ink: #1a0f08;
+  --accent-soft: #2a1a12;
+  --good: #74b583;
+  --good-soft: #17241a;
+  --good-line: #2e4834;
   --shadow: 0 12px 40px rgba(0, 0, 0, 0.55);
 }
 
