@@ -3,25 +3,30 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Call Assistant</title>
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📞</text></svg>">
-  <link rel="stylesheet" href="styles.css?v=2">
+  <title>EE Mobile Call Flow</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📶</text></svg>">
+  <link rel="stylesheet" href="styles.css?v=1">
 </head>
 <body>
 
   <div class="app">
     <aside class="sidebar sidebar-left" aria-label="Quick access">
-      <div class="brand">Call Assistant</div>
-      <a class="switcher" href="ee/index.html">Switch to EE Mobile flow</a>
+      <div class="brand">EE Mobile</div>
+      <a class="switcher" href="../index.html">Switch to BT flow</a>
+
       <div class="sidebar-label">Jump to</div>
-      <button class="side-btn" data-panel="valueprops">Value Props</button>
-      <button class="side-btn" data-panel="discovery">Questions</button>
-      <button class="side-btn" data-panel="products">Products</button>
-      <button class="side-btn" data-panel="close">Close</button>
+      <button class="side-btn" data-panel="cards">Battle Cards</button>
+      <button class="side-btn" data-panel="objections">Objections</button>
+      <button class="side-btn" data-panel="factfind">Fact-Find</button>
+      <button class="side-btn" data-panel="pic">PIC Library</button>
+      <button class="side-btn" data-panel="whyee">Why EE</button>
+      <button class="side-btn" data-panel="esn">ESN Proof</button>
+      <button class="side-btn" data-panel="rules">Do / Don't</button>
     </aside>
 
     <main class="stage">
       <div class="rail" id="stageRail" aria-label="Call stage"></div>
+      <div class="ctx-bar" id="ctxBar" aria-label="Call context"></div>
       <div id="view"></div>
     </main>
 
@@ -42,7 +47,7 @@
     </div>
   </div>
 
-  <script src="data.js?v=2"></script>
-  <script src="app.js?v=2"></script>
+  <script src="data.js?v=1"></script>
+  <script src="app.js?v=1"></script>
 </body>
 </html>
